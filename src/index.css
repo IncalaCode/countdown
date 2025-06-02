@@ -1,0 +1,268 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .animate-fade-in-delay {
+    animation: fadeIn 1s ease-in-out 0.3s forwards;
+    opacity: 0;
+  }
+  
+  .animate-fade-in-delay-long {
+    animation: fadeIn 1s ease-in-out 0.6s forwards;
+    opacity: 0;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .animate-pulse-once {
+    animation: pulseOnce 0.5s ease-out;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseOnce {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 122, 255, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 5px rgba(0, 122, 255, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 122, 255, 0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Wave text animation */
+.wave-text {
+  display: inline-block;
+}
+
+.wave-span {
+  display: inline-block;
+  animation-name: wave;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* Slower wave for subtitle */
+.wave-text-slow {
+  display: inline-block;
+}
+
+.wave-span-slow {
+  display: inline-block;
+  animation-name: wave;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Apply different animation delays to each letter */
+.wave-span:nth-child(1) { animation-delay: 0.0s; }
+.wave-span:nth-child(2) { animation-delay: 0.05s; }
+.wave-span:nth-child(3) { animation-delay: 0.1s; }
+.wave-span:nth-child(4) { animation-delay: 0.15s; }
+.wave-span:nth-child(5) { animation-delay: 0.2s; }
+.wave-span:nth-child(6) { animation-delay: 0.25s; }
+.wave-span:nth-child(7) { animation-delay: 0.3s; }
+.wave-span:nth-child(8) { animation-delay: 0.35s; }
+.wave-span:nth-child(9) { animation-delay: 0.4s; }
+.wave-span:nth-child(10) { animation-delay: 0.45s; }
+.wave-span:nth-child(11) { animation-delay: 0.5s; }
+.wave-span:nth-child(12) { animation-delay: 0.55s; }
+.wave-span:nth-child(13) { animation-delay: 0.6s; }
+.wave-span:nth-child(14) { animation-delay: 0.65s; }
+.wave-span:nth-child(15) { animation-delay: 0.7s; }
+.wave-span:nth-child(16) { animation-delay: 0.75s; }
+.wave-span:nth-child(17) { animation-delay: 0.8s; }
+.wave-span:nth-child(18) { animation-delay: 0.85s; }
+.wave-span:nth-child(19) { animation-delay: 0.9s; }
+.wave-span:nth-child(20) { animation-delay: 0.95s; }
+.wave-span:nth-child(21) { animation-delay: 1.0s; }
+.wave-span:nth-child(22) { animation-delay: 1.05s; }
+.wave-span:nth-child(23) { animation-delay: 1.1s; }
+.wave-span:nth-child(24) { animation-delay: 1.15s; }
+.wave-span:nth-child(25) { animation-delay: 1.2s; }
+.wave-span:nth-child(26) { animation-delay: 1.25s; }
+.wave-span:nth-child(27) { animation-delay: 1.3s; }
+.wave-span:nth-child(28) { animation-delay: 1.35s; }
+.wave-span:nth-child(29) { animation-delay: 1.4s; }
+.wave-span:nth-child(30) { animation-delay: 1.45s; }
+.wave-span:nth-child(31) { animation-delay: 1.5s; }
+.wave-span:nth-child(32) { animation-delay: 1.55s; }
+.wave-span:nth-child(33) { animation-delay: 1.6s; }
+.wave-span:nth-child(34) { animation-delay: 1.65s; }
+.wave-span:nth-child(35) { animation-delay: 1.7s; }
+.wave-span:nth-child(36) { animation-delay: 1.75s; }
+.wave-span:nth-child(37) { animation-delay: 1.8s; }
+.wave-span:nth-child(38) { animation-delay: 1.85s; }
+.wave-span:nth-child(39) { animation-delay: 1.9s; }
+.wave-span:nth-child(40) { animation-delay: 1.95s; }
+.wave-span:nth-child(41) { animation-delay: 2.0s; }
+.wave-span:nth-child(42) { animation-delay: 2.05s; }
+.wave-span:nth-child(43) { animation-delay: 2.1s; }
+.wave-span:nth-child(44) { animation-delay: 2.15s; }
+.wave-span:nth-child(45) { animation-delay: 2.2s; }
+.wave-span:nth-child(46) { animation-delay: 2.25s; }
+.wave-span:nth-child(47) { animation-delay: 2.3s; }
+.wave-span:nth-child(48) { animation-delay: 2.35s; }
+.wave-span:nth-child(49) { animation-delay: 2.4s; }
+.wave-span:nth-child(50) { animation-delay: 2.45s; }
+.wave-span:nth-child(51) { animation-delay: 2.5s; }
+.wave-span:nth-child(52) { animation-delay: 2.55s; }
+.wave-span:nth-child(53) { animation-delay: 2.6s; }
+.wave-span:nth-child(54) { animation-delay: 2.65s; }
+.wave-span:nth-child(55) { animation-delay: 2.7s; }
+.wave-span:nth-child(56) { animation-delay: 2.75s; }
+.wave-span:nth-child(57) { animation-delay: 2.8s; }
+.wave-span:nth-child(58) { animation-delay: 2.85s; }
+.wave-span:nth-child(59) { animation-delay: 2.9s; }
+.wave-span:nth-child(60) { animation-delay: 2.95s; }
+.wave-span:nth-child(61) { animation-delay: 3.0s; }
+.wave-span:nth-child(62) { animation-delay: 3.05s; }
+.wave-span:nth-child(63) { animation-delay: 3.1s; }
+.wave-span:nth-child(64) { animation-delay: 3.15s; }
+.wave-span:nth-child(65) { animation-delay: 3.2s; }
+.wave-span:nth-child(66) { animation-delay: 3.25s; }
+.wave-span:nth-child(67) { animation-delay: 3.3s; }
+.wave-span:nth-child(68) { animation-delay: 3.35s; }
+.wave-span:nth-child(69) { animation-delay: 3.4s; }
+.wave-span:nth-child(70) { animation-delay: 3.45s; }
+.wave-span:nth-child(71) { animation-delay: 3.5s; }
+.wave-span:nth-child(72) { animation-delay: 3.55s; }
+.wave-span:nth-child(73) { animation-delay: 3.6s; }
+.wave-span:nth-child(74) { animation-delay: 3.65s; }
+.wave-span:nth-child(75) { animation-delay: 3.7s; }
+.wave-span:nth-child(76) { animation-delay: 3.75s; }
+.wave-span:nth-child(77) { animation-delay: 3.8s; }
+.wave-span:nth-child(78) { animation-delay: 3.85s; }
+.wave-span:nth-child(79) { animation-delay: 3.9s; }
+.wave-span:nth-child(80) { animation-delay: 3.95s; }
+.wave-span:nth-child(81) { animation-delay: 4.0s; }
+.wave-span:nth-child(82) { animation-delay: 4.05s; }
+.wave-span:nth-child(83) { animation-delay: 4.1s; }
+.wave-span:nth-child(84) { animation-delay: 4.15s; }
+.wave-span:nth-child(85) { animation-delay: 4.2s; }
+.wave-span:nth-child(86) { animation-delay: 4.25s; }
+.wave-span:nth-child(87) { animation-delay: 4.3s; }
+.wave-span:nth-child(88) { animation-delay: 4.35s; }
+.wave-span:nth-child(89) { animation-delay: 4.4s; }
+.wave-span:nth-child(90) { animation-delay: 4.45s; }
+
+/* Slower wave animation delays */
+.wave-span-slow:nth-child(1) { animation-delay: 0.0s; }
+.wave-span-slow:nth-child(2) { animation-delay: 0.08s; }
+.wave-span-slow:nth-child(3) { animation-delay: 0.16s; }
+.wave-span-slow:nth-child(4) { animation-delay: 0.24s; }
+.wave-span-slow:nth-child(5) { animation-delay: 0.32s; }
+.wave-span-slow:nth-child(6) { animation-delay: 0.4s; }
+.wave-span-slow:nth-child(7) { animation-delay: 0.48s; }
+.wave-span-slow:nth-child(8) { animation-delay: 0.56s; }
+.wave-span-slow:nth-child(9) { animation-delay: 0.64s; }
+.wave-span-slow:nth-child(10) { animation-delay: 0.72s; }
+.wave-span-slow:nth-child(11) { animation-delay: 0.8s; }
+.wave-span-slow:nth-child(12) { animation-delay: 0.88s; }
+.wave-span-slow:nth-child(13) { animation-delay: 0.96s; }
+.wave-span-slow:nth-child(14) { animation-delay: 1.04s; }
+.wave-span-slow:nth-child(15) { animation-delay: 1.12s; }
+.wave-span-slow:nth-child(16) { animation-delay: 1.2s; }
+.wave-span-slow:nth-child(17) { animation-delay: 1.28s; }
+.wave-span-slow:nth-child(18) { animation-delay: 1.36s; }
+.wave-span-slow:nth-child(19) { animation-delay: 1.44s; }
+.wave-span-slow:nth-child(20) { animation-delay: 1.52s; }
+.wave-span-slow:nth-child(21) { animation-delay: 1.6s; }
+.wave-span-slow:nth-child(22) { animation-delay: 1.68s; }
+.wave-span-slow:nth-child(23) { animation-delay: 1.76s; }
+.wave-span-slow:nth-child(24) { animation-delay: 1.84s; }
+.wave-span-slow:nth-child(25) { animation-delay: 1.92s; }
+.wave-span-slow:nth-child(26) { animation-delay: 2.0s; }
+.wave-span-slow:nth-child(27) { animation-delay: 2.08s; }
+.wave-span-slow:nth-child(28) { animation-delay: 2.16s; }
+.wave-span-slow:nth-child(29) { animation-delay: 2.24s; }
+.wave-span-slow:nth-child(30) { animation-delay: 2.32s; }
+.wave-span-slow:nth-child(31) { animation-delay: 2.4s; }
+.wave-span-slow:nth-child(32) { animation-delay: 2.48s; }
+.wave-span-slow:nth-child(33) { animation-delay: 2.56s; }
+.wave-span-slow:nth-child(34) { animation-delay: 2.64s; }
+.wave-span-slow:nth-child(35) { animation-delay: 2.72s; }
+.wave-span-slow:nth-child(36) { animation-delay: 2.8s; }
+.wave-span-slow:nth-child(37) { animation-delay: 2.88s; }
+.wave-span-slow:nth-child(38) { animation-delay: 2.96s; }
+.wave-span-slow:nth-child(39) { animation-delay: 3.04s; }
+.wave-span-slow:nth-child(40) { animation-delay: 3.12s; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0c2d6b;
+  color: white;
+  overflow-x: hidden;
+}
+
+.countdown-container {
+  transition: transform 0.5s ease;
+  position: relative;
+  z-index: 10;
+}
+
+.countdown-container:hover {
+  transform: scale(1.02);
+}
